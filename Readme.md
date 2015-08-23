@@ -9,11 +9,6 @@ This is a fork of [madhums/mongoose-migrate](https://github.com/madhums/mongoose
 * Eliminate the need to configure Mongoose schema and model name. Model is automatically named `Migration`.
 * Config file is a Node module. This enables things like reading database URLs from environment variables instead of hard-coding in the JSON file.
 
-## Installation
-
-```sh
-$ npm install mongoose-migrate-2 -g
-```
 ## Configuration
 
 Create a config file with one database URL for each node environment, i.e. `process.env.NODE_ENV`.
