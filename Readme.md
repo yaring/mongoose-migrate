@@ -1,9 +1,13 @@
 ## mongoose-migrate-2
 
-Node.js migration framework that uses MongoDB to keep track of migrations. This is a fork of [madhums/mongoose-migrate](https://github.com/madhums/mongoose-migrate) with two changes:
+Node.js migration framework that uses MongoDB to keep track of migrations.
 
-* Config file is a Node module. This enables things like reading database URLs from environment variables instead of hard-coding in the JSON file.
+[![NPM](https://nodei.co/npm/mongoose-migrate-2.png?compact=true)](https://www.npmjs.com/package/mongoose-migrate-2)
+
+This is a fork of [madhums/mongoose-migrate](https://github.com/madhums/mongoose-migrate) with two changes:
+
 * Eliminate the need to configure Mongoose schema and model name. Model is automatically named `Migration`.
+* Config file is a Node module. This enables things like reading database URLs from environment variables instead of hard-coding in the JSON file.
 
 ## Installation
 
