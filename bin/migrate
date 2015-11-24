@@ -32,7 +32,7 @@ var cwd;
 
 var usage = [
     ''
-  , '  Usage: mongoose-migrate-2 [options] [command]'
+  , '  Usage: mongoose-migrate [options] [command]'
   , ''
   , '  Options:'
   , ''

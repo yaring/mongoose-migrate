@@ -1,8 +1,6 @@
-## mongoose-migrate-2
+## mongoose-migrate
 
 Node.js migration framework that uses MongoDB to keep track of migrations.
-
-[![NPM](https://nodei.co/npm/mongoose-migrate-2.png?compact=true)](https://www.npmjs.com/package/mongoose-migrate-2)
 
 This is a fork of [madhums/mongoose-migrate](https://github.com/madhums/mongoose-migrate) with two changes:
 
@@ -25,7 +23,7 @@ module.exports = {
 ## Usage
 
 ```sh
-$ MIGRATION_CONFIG_PATH=./migrations/config.js mongoose-migrate-2 [options] [command]
+$ MIGRATION_CONFIG_PATH=./migrations/config.js mongoose-migrate [options] [command]
 
 Options:
 
@@ -40,7 +38,7 @@ Commands:
 
 ## Creating Migrations
 
-To create a migration, execute `mongoose-migrate-2 create` with an optional title. `mongoose-migrate-2` will create a node module within `./migrations/` which contains the following two exports:
+To create a migration, execute `mongoose-migrate create` with an optional title. `mongoose-migrate` will create a node module within `./migrations/` which contains the following two exports:
 
     exports.up = function(next){
       next();
@@ -98,12 +96,12 @@ When first running the migrations, all will be executed in sequence.
     up : migrations/1316027433425-coolest-pet.js
     migration : complete
 
-Subsequent attempts will simply output "complete", as they have already been executed in this machine. `mongoose-migrate-2` knows this because it stores the current state in MongoDB.
+Subsequent attempts will simply output "complete", as they have already been executed in this machine. `mongoose-migrate` knows this because it stores the current state in MongoDB.
 
     $ migrate
     migration : complete
 
-If we were to create another migration using `mongoose-migrate-2 create`, and then execute migrations again, we would execute only those not previously executed:
+If we were to create another migration using `mongoose-migrate create`, and then execute migrations again, we would execute only those not previously executed:
 
     $ migrate
     up : migrates/1316027433455-coolest-owner.js

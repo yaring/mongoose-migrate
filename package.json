@@ -1,11 +1,11 @@
 {
-    "name": "mongoose-migrate-2"
-  , "version": "0.2.0"
+    "name": "mongoose-migrate"
+  , "version": "0.3.0"
   , "description": "Migration framework for MongoDB"
   , "keywords": ["migrate", "migrations", "mongoose", "mongodb"]
   , "author": "Buu Nguyen <buunguyen@gmail.com>"
   , "repository": "git://github.com/buunguyen/mongoose-migrate"
-  , "bin": { "mongoose-migrate-2": "./bin/migrate" }
+  , "bin": { "mongoose-migrate": "./bin/migrate" }
   , "dependencies" : {
       "mongoose": "~4.2.0"
     }
